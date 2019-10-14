@@ -2,6 +2,8 @@
 # Dynamic search library
 This library will help you to write LINQ queries dynamically. By using this library you will be able to search through various data sources. Search process is based on Expression Trees.
 
+<a href="https://www.nuget.org/packages/Utmdev.DynamicSearch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.DynamicSearch?style=for-the-badge"/></a>
+
 ![enter image description here](https://pineco.de/wp-content/uploads/2018/03/basic-eloquent-search-techniques-cover.png)
 
 **Usage**
