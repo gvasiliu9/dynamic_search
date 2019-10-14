@@ -50,7 +50,7 @@ namespace Utmdev.DynamicSearch
                 {
 
                     // Check property
-                    if (property == null)
+                    if (property == null || property.Name == "OrderBy")
                         continue;
 
                     // Get default value

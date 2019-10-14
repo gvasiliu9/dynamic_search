@@ -65,7 +65,6 @@ namespace Playground
             public string EngineNumber { get; set; }
 
             [DefaultValue(OrderCarBy.None)]
-            [Exclude]
             public OrderCarBy OrderBy { get; set; }
 
             #endregion
@@ -73,7 +72,6 @@ namespace Playground
 
         static void Main(string[] args)
         {
-            // Get cars list
             var cars = GetCars();
 
             IQueryable<Car> results;
