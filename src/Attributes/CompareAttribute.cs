@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using static ST.FilterExtension.Attributes.Enums;
+using static Utmdev.DynamicSearch.Attributes.Enums;
 
-namespace ST.FilterExtension.Attributes
+namespace Utmdev.DynamicSearch.Attributes
 {
     /// <summary>
     /// Use this attribute to specify compare type
     /// </summary>
     [AttributeUsage(AttributeTargets.Property)]
-    public class CompareAttribute:  Attribute
+    public class CompareAttribute : Attribute
     {
         private CompareType compareType;
 

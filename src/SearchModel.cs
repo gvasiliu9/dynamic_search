@@ -1,13 +1,10 @@
-﻿using ST.FilterExtension.Attributes;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Utmdev.DynamicSearch.Attributes;
 
-namespace ST.FilterExtension
+namespace Utmdev.DynamicSearch
 {
-    public class BaseSearchViewModel
+    public class SearchModel
     {
-        private int _pageSize = 21;
+        private int _pageSize = 20;
 
         [Exclude]
         public int Page { get; set; } = 1;

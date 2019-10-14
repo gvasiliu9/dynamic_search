@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ST.FilterExtension.Attributes
+﻿namespace Utmdev.DynamicSearch.Attributes
 {
     public class Enums
     {

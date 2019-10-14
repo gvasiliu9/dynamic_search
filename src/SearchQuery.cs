@@ -1,26 +1,23 @@
-﻿using ST.FilterExtension.Attributes;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using Utmdev.DynamicSearch.Attributes;
 
-namespace ST.FilterExtension
+namespace Utmdev.DynamicSearch
 {
-    public class SearchQuery<Model, SearchViewModel>
+    public class SearchQuery<Model, SearchModel>
     {
         // Expression Tree parts
         ParameterExpression parameter = Expression.Parameter(typeof(Model), "item");
-        Expression left = null;
-        Expression right = null;
-        MethodInfo method = null;
-        PropertyInfo property = null;
-        MemberExpression propertyAccess = null;
-        LambdaExpression lambdaExpression = null;
-        Expression expression = null;
-        Expression predicate = null;
+        Expression left;
+        Expression right;
+        MethodInfo method;
+        PropertyInfo property;
+        MemberExpression propertyAccess;
+        LambdaExpression lambdaExpression;
+        Expression expression;
+        Expression predicate;
 
         // Items sources
         public IQueryable<Model> Source { get; set; }
@@ -30,11 +27,11 @@ namespace ST.FilterExtension
         /// </summary>
         /// <param name="searchViewModel"></param>
         /// <returns></returns>
-        public IQueryable<Model> Run(SearchViewModel searchViewModel)
+        public IQueryable<Model> Run(SearchModel searchViewModel)
         {
             // Check
             if (searchViewModel == null)
-                throw new ArgumentNullException(nameof(SearchViewModel));
+                throw new ArgumentNullException(nameof(SearchModel));
 
             // Get viewmodel type
             Type searchViewModelType = searchViewModel.GetType();
@@ -51,6 +48,10 @@ namespace ST.FilterExtension
             {
                 foreach (var property in properties)
                 {
+
+                    // Check property
+                    if (property == null)
+                        continue;
 
                     // Get default value
                     var defaultValueAttribute =
@@ -122,10 +123,14 @@ namespace ST.FilterExtension
 
                 }
             }
-            catch
+            catch (Exception ex)
             {
                 throw new Exception("Build predicate error");
             }
+
+            // Check items source
+            if (Source == null)
+                throw new Exception("Source is not specified");
 
             // Execute search
             if (predicate != null)
