@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+
+        <id>Utmdev.DynamicSearch</id>
+        <version>1.0.0</version>
+        <authors>Gheorghe Vasiliu</authors>
+        <owners>Gheorghe Vasiliu</owners>
+        <projectUrl>https://github.com/utmdev/dynamic_search</projectUrl>
+        <iconUrl>https://c2itconsulting.net/wp-content/uploads/2016/02/logo-xamarin.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes>Bug fixes and performance improvements</releaseNotes>
+        <description>Dynamic search library. Build dynamic LINQ queries</description>
+        <copyright>Copyright © 2019 Utmdev</copyright>
+        <tags>.net core, dynamic search</tags>
+
+    </metadata>
+</package>
