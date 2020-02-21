@@ -4,7 +4,7 @@ This library will help you to write LINQ queries dynamically. By using this libr
 
 <a href="https://www.nuget.org/packages/Utmdev.DynamicSearch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.DynamicSearch?style=for-the-badge"/></a>
 
-![enter image description here](https://www.shoutmeloud.com/wp-content/uploads/2018/05/Find-Google-Keyword-Planner-Search-Volume.jpg)
+![enter image description here](https://www.lawlytics.com/wp-content/uploads/2016/01/SEO-Myths.jpg)
 
 **Usage**
 
