@@ -4,7 +4,7 @@ This library will help you to write LINQ queries dynamically. By using this libr
 
 <a href="https://www.nuget.org/packages/Utmdev.DynamicSearch/" target="_blank"><img src="https://img.shields.io/nuget/v/Utmdev.DynamicSearch?style=for-the-badge"/></a>
 
-![enter image description here](https://www.lawlytics.com/wp-content/uploads/2016/01/SEO-Myths.jpg)
+![enter image description here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fswlh%2Fusing-razor-class-library-rcl-to-generate-a-common-ui-for-all-your-dotnet-web-projects-be970d4a82a0&psig=AOvVaw1kk--8SkETmYK-dUtqURpI&ust=1620121878163000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjCgLuerfACFQAAAAAdAAAAABAN)
 
 **Usage**
 
